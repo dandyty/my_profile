@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent{
+    max-width: 100%;
+    margin: auto;
+    display: relative;
+    display: flex;
+    background: url(showcase.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    z-index: 0;
+    color: #fff;
+}
+.parent .child-one{
+    background-color: #000;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-menu{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 20px;
+    gap: 20px;
+}
+.nav-menu .nav-item{
+    display: inline-block;
+    list-style: none;
+    font-weight: 100;
+}
+.nav-menu .nav-item .nav-link{
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 700;
+    transition: 0.3s;
+    padding: 3px;
+}
+.nav-menu .nav-item .nav-link:hover{
+    background-color: rgb(41, 212, 41);
+    border-radius: 5px;
+
+}
+.child-two{
+    width: 100%;
+}
+.child-two .brand-two{
+    margin-top: 220px;
+    width: 100%;
+}
+.brand-two .sky{
+    text-align: center;
+    font-size: 30px;   
+}
+.child-two .lorem{
+    text-align: center;
+    font-size: 20px; 
+}
+.child-two .lorem-more{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lorem-more button{
+    background-color: rgb(41, 212, 41);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 7rem;
+    height: 2rem;
+    transition: 00.3s;
+}
+.lorem-more button:hover{
+    background-color: #64c964;
+}
+.what{
+    text-align: center;
+    margin: 30px auto;
+    font-size: 25px;
+}
+.what .what-do .at{
+    color: green;
+}
+.detail .detail-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.detail{
+    max-width: 90%;
+    margin: auto;
+}
+.detail .detail-item .invest{
+    width: 300px;
+    align-items: center;
+
+}
+.detail .detail-item .invest .image{
+    background-color: #005600;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 30px;
+    margin: auto;
+}
+.detail .detail-item .invest .dolor{
+    text-align: center;
+} 
+.detail .detail-item .invest .dolor .bank{
+    font-size: 15px;
+}
+.people{
+    margin: 50px auto;
+}
+.people .people-level{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+}
+.people .people-level .people-term{
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+}
+.people .people-level .people-term div{
+    margin: 20px auto;
+}
+.people .people-level .people-term .are{
+    color: green;
+}
+.people .people-level .people-term p{
+    margin: 20px auto;
+}
+.loggo{
+    margin-bottom: 50px;
+}
+.loggo .loggo-brand{
+    width: 700px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-content: center;
+    gap: 50px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.form .form-item{
+    background-color: #14f314;
+    padding: 20px ;
+    color: #fff;
+    width: 675px;
+}
+.form .contact{
+    font-size: 25px;
+    margin: 10px auto;
+}
+.form p{
+    font-size: 15px;
+}
+.form .form-name{
+    margin: 10px auto;
+}
+.form .form-name input{
+    width: 35rem;
+    height: 2.5rem;
+    padding: 5px;
+    border: none;
+    outline-style: none;
+}
+.form .form-name input[type="button"]{
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    height: 2rem;
+    transition: 0.3s;
+}
+textarea{
+    border: none;
+    width: 35rem;
+}
+.form .form-name input[type="button"]:hover{
+    background-color: #333;
+}
+.copyright{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 800px){
+    .parent .child-one{
+        width: 99.8%;
+    }
+    .brand-two .sky{
+        text-align: center;
+        font-size: 15px;   
+    }
+    .child-two .lorem{
+        text-align: center;
+        font-size: 10px; 
+    }
+    .lorem-more button{
+        border-radius: 5px;
+        width: 5rem;
+        height: 1.3rem;
+        font-size: 10px;
+    }
+    .what .what-do{
+        font-size: 20px;
+    }
+    .detail .detail-item .invest img{
+        width: 30px;
+    }
+    .detail .detail-item .invest .image{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+    .detail{
+        max-width: 70%;
+        margin: auto;
+    }
+    .detail .detail-item .invest{
+        display: flex;
+    }
+    .people .people-level .people-item img{
+        width: 775px;
+    }
+    .people .people-level .people-term{
+        padding: 20px;
+    }
+    .people .people-level .people-term div{
+        margin: 5px auto;
+    }
+    .people .people-level .people-term .are{
+        color: green;
+    }
+    .loggo .loggo-brand{
+        width: 600px;
+        gap: 20px;
+    }
+    .loggo .loggo-brand img{
+        width: 80px;
+    }
+    .form .form-item{
+        background-color: #14f314;
+        padding: 20px ;
+        color: #fff;
+        width: 770px;
+    }
+    .form .contact{
+        font-size: 25px;
+        margin: 10px auto;
+    }
+    .form p{
+        font-size: 15px;
+    }
+    .form .form-name{
+        margin: 10px auto;
+    }
+    .form .form-name input{
+        width: 35rem;
+        height: 2.5rem;
+        padding: 5px;
+        border: none;
+        outline-style: none;
+    }
+    .form .form-name input[type="button"]{
+        background-color: #000000;
+        color: #fff;
+        border-radius: 5px;
+        height: 2rem;
+        transition: 0.3s;
+    }
+    textarea{
+        border: none;
+        width: 35rem;
+    }
+    .form .form-name input[type="button"]:hover{
+        background-color: #333;
+    }
+    .staticmap{
+        width: 770px;
+    }
+    .copyright{
+        padding: 10px;
+        width: 99%;
+        font-size: 15px;
+    }
+    .form{
+        display: block;
+    }
+    .people-level{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 600px){
+    .parent .child-one{
+        width: 99.5%;
+    }
+    /* .nav-menu .nav-item{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } */
+    .invest .image{
+        display: none;
+    }
+    .people .people-level .people-item img{
+        width: 580px;
+    }
+    .loggo .loggo-brand{
+        width: 500px;
+        gap: 30px;
+    }
+    .loggo .loggo-brand img{
+        width: 60px;
+    }
+    .form .form-item{
+        padding: 10px;
+        width: 580px;
+    }
+    .staticmap{
+        width: 580px;
+    }
+}
